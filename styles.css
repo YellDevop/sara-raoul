@@ -1,0 +1,356 @@
+/* Global Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    text-align: center;
+    box-sizing: border-box; /* Per rendere il layout più prevedibile */
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    color: #003c01;
+    margin-bottom: 15px;
+}
+
+p {
+    color: #000000;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.countdown-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Countdown Section */
+.countdown-section {
+    padding: 50px 20px;
+    background: #fff;
+    color: #333;
+    border-bottom: 3px solid #E9967A;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#countdown {
+    display: flex;
+    color: #333;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap; /* Per adattarsi ai dispositivi mobili */
+}
+
+.countdown-item {
+    margin: 0 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+}
+
+.countdown-item span {
+    display: block;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: rgb(0, 128, 0);
+    animation: waveRGB 4s ease-in-out infinite;
+}
+
+.countdown-item p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.countdown-item:hover {
+    transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('intro.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.cta-button {
+    background: #003c01;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button:hover {
+    background: hsl(51, 100%, 50%);
+    transform: scale(1.05);
+    text-decoration: bold;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #ba96974e, #f5f5dc, #ba96974e);
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px; /* Altezza della sfumatura */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+#testo-presentazione{
+    font-weight: bold;
+    font-size: larger;
+}
+
+.section h2 {
+    color: #003c01;
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.about-image {
+    max-width: 20%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.location p {
+    font-size: 1.1em;
+    margin: 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+    transition: transform 0.3s ease
+}
+
+a:hover {
+    color: #003c01;
+    text-transform: uppercase;
+}
+
+/* Donation Section */
+.donation-section {
+    background: url('intro.jpg') no-repeat center/cover;
+    background-attachment: fixed;
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.donation-section h2 {
+    color: #003c01;
+    font-size: 3.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.donation-panel h3 {
+    color: #003c01;
+    font-size: 2.5em;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.donation-panel p {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: rgb(0, 0, 0);
+}
+
+.donation-subtitle {
+    color: rgb(0, 0, 0);
+}
+
+.donation-panel strong {
+    color: #000000;
+}
+
+.payment-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Per rendere il layout più flessibile su mobile */
+}
+
+.payment-buttons .btn {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 50px;
+    color: white;
+    transition: all 0.3s ease;
+    text-align: center;
+    background-color: transparent; /* Rimuove lo sfondo colorato */
+    border: 2px solid transparent; /* Rimuove eventuali bordi */
+}
+
+.donazione-alternativa {
+    color: #000000;
+    font-weight: bolder;
+    font-style: oblique;
+}
+
+.payment-buttons .paypal-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.payment-buttons .paypal-btn:hover,
+.payment-buttons .satispay-btn:hover {
+    background-color: transparent; /* Mantieni trasparente anche al passaggio del mouse */
+}
+
+.payment-logo {
+    width: 150px; /* Larghezza personalizzata */
+    height: auto; /* Mantiene le proporzioni */
+    margin: 10px; /* Spazio attorno ai loghi */
+    transition: transform 0.3s ease; /* Animazione al passaggio del mouse */
+}
+
+.payment-logo:hover {
+    transform: scale(2); /* Ingrandisce leggermente al passaggio del mouse */
+}
+
+/* Alternative Panels */
+.alternatives {
+    text-align: center;
+}
+
+.anelli-png {
+    max-width: 20%;
+    height: auto;
+    margin-top: 20px;
+}
+
+@keyframes waveRGB {
+    0% {
+        color: rgb(0, 128, 0); /* Verde scuro */
+    }
+    25% {
+        color: rgb(3, 137, 3); /* Verde chiaro */
+    }
+    50% {
+        color: rgb(0, 100, 0); /* Verde bosco */
+    }
+    75% {
+        color: rgb(1, 48, 4);  /* Verde scuro */
+    }
+    100% {
+        color: rgb(0, 128, 0);  /* Verde scuro (torna al colore iniziale) */
+    }
+}
+
+.element {
+    animation: waveRGB 4s ease-in-out infinite; /* Durata dell'animazione, tipo di temporizzazione e loop infinito */
+    height: 100px;
+    width: 100%;
+}
+
+/* Media Queries per Mobile */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.2em;
+    }
+
+    .countdown-item {
+        font-size: 1em;
+        margin: 10px;
+    }
+
+    .section h2 {
+        font-size: 3em;
+    }
+
+    .about-image {
+        max-width: 50%;
+    }
+
+    .payment-buttons .btn {
+        font-size: 1em;
+        padding: 12px 25px;
+    }
+
+    .payment-logo {
+        width: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+
+    .section h2 {
+        font-size: 2.5em;
+    }
+
+    .about-image {
+        max-width: 60%;
+    }
+
+    .payment-buttons .btn {
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+
+    .payment-logo {
+        width: 60px;
+    }
+}
