@@ -127,6 +127,18 @@ p {
     text-decoration: bold;
 }
 
+.separator-image {
+    display: block; /* Per far sì che l'immagine sia trattata come un blocco */
+    margin: 30px auto; /* Centra l'immagine orizzontalmente con un margine sopra e sotto */
+    max-width: 100%; /* Adatta l'immagine alla larghezza della pagina, senza superarla */
+    height: auto; /* Mantieni le proporzioni originali */
+    border: none; /* Rimuovi bordi se ci sono */
+}
+
+.separator-image {
+    background-color: transparent; /* Assicura che lo sfondo sia trasparente */
+}
+
 /* Section Styles */
 .section {
     margin-top: 0; /* Rimuove o riduce lo spazio sopra la sezione */
