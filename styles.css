@@ -8,12 +8,18 @@ body {
     box-sizing: border-box; /* Per rendere il layout più prevedibile */
 }
 
-h1, h2 {
+h1 {
     font-family: 'Playfair Display', serif;
     color: #003c01;
     margin-bottom: 15px;
 }
 
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #003c01;
+    margin-bottom: 15px;
+    font-size:3rem;
+}
 p {
     color: #000000;
     line-height: 1.6;
