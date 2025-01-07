@@ -8,6 +8,10 @@ body {
     box-sizing: border-box; /* Per rendere il layout più prevedibile */
 }
 
+header {
+    margin-bottom: 0; /* Riduce lo spazio sotto l'header */
+}
+
 h1 {
     font-family: 'Playfair Display', serif;
     color: #003c01;
@@ -125,6 +129,8 @@ p {
 
 /* Section Styles */
 .section {
+    margin-top: 0; /* Rimuove o riduce lo spazio sopra la sezione */
+    padding-top: 0; /* Riduce il padding sopra la sezione */
     padding: 50px 20px;
     background: linear-gradient(to bottom, #ba96974e, #f5f5dc, #ba96974e);
 }
