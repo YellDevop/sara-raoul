@@ -290,6 +290,12 @@ a:hover {
     width: 100%;
 }
 
+footer {
+    padding: 10px 20px;  /* Spazio attorno al contenuto */
+    background-color: #f1f1f1;
+    text-align: center;   /* Centra il testo */
+}
+
 /* Media Queries per Mobile */
 @media (max-width: 768px) {
     .hero h1 {
