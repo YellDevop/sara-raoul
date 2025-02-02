@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(updateCountdown, 1000);
 });
 
-// Amount Selection
+
 document.querySelectorAll('.amount-btn').forEach(button => {
     button.addEventListener('click', () => {
         document.getElementById('custom-amount').value = button.dataset.value;
